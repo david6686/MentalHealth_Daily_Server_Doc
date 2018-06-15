@@ -1,4 +1,5 @@
 FORMAT: 1A
+
 HOST: http://api.mentaldaily.kaiyeee.tw:8080/
 
 # 心憂日記API
@@ -35,24 +36,39 @@ HOST: http://api.mentaldaily.kaiyeee.tw:8080/
 
     + Body
 
-            [
-                {
-                    "uuid": "SD651GW6EG65W1EG651WERG",
-                    <!--"username": "username",-->
-                    "userID": "userID",
-                    "title" : "hello world"
-                    "content": "content",
-                    "Mood" : [{0.87,0.78}]
+            {
+              "UUID": "639bb069-0796-4d89-b1cd-d726735cbf9d",
+              "Username": "test",
+              "UserID": "P1yjH4GgcFQcJUHULmTgMLC68w64",
+              "Title": "中文測試",
+              "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e\n WOOWOWO",
+              "Mood": {
+                "DocumentSentiment": {
+                  "Magnitude": 1
                 },
-                {
-                    "uuid": "SD651GW6EG65W1EG651WERG",
-                    <!--"username": "username",-->
-                    "userID": "userID",
-                    "title" : "hello world"
-                    "content": "content",
-                    "Mood" : [{0.87,0.78}]
-                }
-            ]
+                "Language": "zh",
+                "Sentences": [
+                  {
+                    "Text": {
+                      "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e",
+                      "BeginOffset": 0
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0.9
+                    }
+                  },
+                  {
+                    "Text": {
+                      "Content": "WOOWOWO",
+                      "BeginOffset": 42
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0
+                    }
+                  }
+                ]
+              }
+            }
 
         
 ## 操作日記 [/v1/daily/{username}/{id}]
@@ -81,21 +97,42 @@ HOST: http://api.mentaldaily.kaiyeee.tw:8080/
     
             X-User: {"displayName": "asdasd", "email": "chris@quiver.is", "emailVerified": false, "isAnonymous": false, "photoURL": null, "providerData":{    "refreshToken": "ANflqpEVNvT4iOyKVVRyybjcuwKqnca", "uid": "P1yjH4GgcFQcJUHULmTgMLC68w64"}, "refreshToken": "ANflqpEVNvT4iOyKVVRyybjcuwKqnca", "uid": "P1yjH4GgcFQcJUHULmTgMLC68w64"}
 
-
-
-
 + Response 200 (application/json)
 
     + Body
     
-            
             {
-                "uuid": "SD651GW6EG65W1EG651WERG",
-                <!--"username": "username",-->
-                "userID": "userID",
-                "title" : "hello world"
-                "content": "content",
-                "Mood" : [{0.87,0.78}]
+              "UUID": "639bb069-0796-4d89-b1cd-d726735cbf9d",
+              "Username": "test",
+              "UserID": "P1yjH4GgcFQcJUHULmTgMLC68w64",
+              "Title": "中文測試",
+              "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e\n WOOWOWO",
+              "Mood": {
+                "DocumentSentiment": {
+                  "Magnitude": 1
+                },
+                "Language": "zh",
+                "Sentences": [
+                  {
+                    "Text": {
+                      "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e",
+                      "BeginOffset": 0
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0.9
+                    }
+                  },
+                  {
+                    "Text": {
+                      "Content": "WOOWOWO",
+                      "BeginOffset": 42
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0
+                    }
+                  }
+                ]
+              }
             }
             
 
@@ -121,12 +158,37 @@ HOST: http://api.mentaldaily.kaiyeee.tw:8080/
     
             
             {
-                "uuid": "SD651GW6EG65W1EG651WERG",
-                <!--"username": "username",-->
-                "userID": "userID",
-                "title" : "hello world"
-                "content": "content",
-                "Mood" : [{0.87,0.78}]
+              "UUID": "639bb069-0796-4d89-b1cd-d726735cbf9d",
+              "Username": "test",
+              "UserID": "P1yjH4GgcFQcJUHULmTgMLC68w64",
+              "Title": "中文測試",
+              "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e\n WOOWOWO",
+              "Mood": {
+                "DocumentSentiment": {
+                  "Magnitude": 1
+                },
+                "Language": "zh",
+                "Sentences": [
+                  {
+                    "Text": {
+                      "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e",
+                      "BeginOffset": 0
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0.9
+                    }
+                  },
+                  {
+                    "Text": {
+                      "Content": "WOOWOWO",
+                      "BeginOffset": 42
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0
+                    }
+                  }
+                ]
+              }
             }
             
 
@@ -144,12 +206,37 @@ HOST: http://api.mentaldaily.kaiyeee.tw:8080/
     
             
             {
-                "uuid": "SD651GW6EG65W1EG651WERG",
-                <!--"username": "username",-->
-                "userID": "userID",
-                "title" : "hello world"
-                "content": "content",
-                "Mood" : [{0.87,0.78}]
+              "UUID": "639bb069-0796-4d89-b1cd-d726735cbf9d",
+              "Username": "test",
+              "UserID": "P1yjH4GgcFQcJUHULmTgMLC68w64",
+              "Title": "中文測試",
+              "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e\n WOOWOWO",
+              "Mood": {
+                "DocumentSentiment": {
+                  "Magnitude": 1
+                },
+                "Language": "zh",
+                "Sentences": [
+                  {
+                    "Text": {
+                      "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e",
+                      "BeginOffset": 0
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0.9
+                    }
+                  },
+                  {
+                    "Text": {
+                      "Content": "WOOWOWO",
+                      "BeginOffset": 42
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0
+                    }
+                  }
+                ]
+              }
             }
             
             
@@ -180,10 +267,62 @@ HOST: http://api.mentaldaily.kaiyeee.tw:8080/
     
             
             {
-                "uuid": "SD651GW6EG65W1EG651WERG",
-                "username": "username",
-                "userID": "userID",
-                "title" : "hello world"
-                "content": "content",
-                "Mood" : [{0.87,0.78}]
+              "UUID": "639bb069-0796-4d89-b1cd-d726735cbf9d",
+              "Username": "test",
+              "UserID": "P1yjH4GgcFQcJUHULmTgMLC68w64",
+              "Title": "中文測試",
+              "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e\n WOOWOWO",
+              "Mood": {
+                "DocumentSentiment": {
+                  "Magnitude": 1
+                },
+                "Language": "zh",
+                "Sentences": [
+                  {
+                    "Text": {
+                      "Content": "感謝各位大神不懈的努力\u003c(_ _)\u003e",
+                      "BeginOffset": 0
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0.9
+                    }
+                  },
+                  {
+                    "Text": {
+                      "Content": "WOOWOWO",
+                      "BeginOffset": 42
+                    },
+                    "Sentiment": {
+                      "Magnitude": 0
+                    }
+                  }
+                ]
+              }
             }
+            
+
+
+<!--
+## 心情分析 [https://us-central1-sappy-yzu-big-data.cloudfunctions.net/getContextScore]
+
+### 心情分析 [POST]
+
++ Request (application/json)
+
+    + Body
+    
+            {
+                "message": "中文測試"
+            }
+            
+
++ Response 200 (application/json)
+
+    + Body
+    
+            
+            {
+                "score": "0.5",
+                "username": "username"
+            }
+-->
